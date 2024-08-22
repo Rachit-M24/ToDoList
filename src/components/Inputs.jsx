@@ -63,7 +63,6 @@ const Inputs = () => {
         <div className="submit">
           <button
             onClick={addTask}
-            // onKeyDown={"Enter"}
             className="add-btn w-20 text-white font-bold rounded-md bg-teal-600"
           >
             Add

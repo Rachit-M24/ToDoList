@@ -54,8 +54,8 @@ const Inputs = () => {
                 task={task}
                 indexes={index}
                 completedtask={todos.completeTask}
-                deleteTask={() => {
-                  todos.tasks ? todos.deleteTask(index) : " ";
+                deleteTask={(tasks) => {
+                  tasks ? todos.deleteTask(index) : " ";
                 }}
               />
             );

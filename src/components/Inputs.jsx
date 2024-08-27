@@ -29,6 +29,11 @@ const Inputs = () => {
             type="text"
             name="task"
             value={todos.newTask}
+            onKeyDown={(e) => {
+              e.key == "Enter" ? `${todos.addTask()}`
+              :"";
+              ;
+            }}
             onChange={todos.inputHandleChange}
             placeholder="Enter your task"
             className="task h-6 w-5/5 p-4 rounded-md outline-none"
